@@ -1,0 +1,37 @@
+// Margin and padding
+// 6 level of size: 0, 5px, 10px, 15px, 20px, 30px and 40px.
+// 6 kind of margin or padding: top, bottom, left, right, top-bottom, left-right.
+
+// mt for margin-top, mb for margin-bottom, ml for left, mr for right, mx for margin left-right, my for margin top-bottom
+// e.g: mt-0 for margin-top: 0, my-6 for margin-top: 40px, margin-bottom: 40px
+// the same convention applied to padding
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacers {
+
+    .#{$abbrev}t-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-top: $length !important;
+    }
+
+    .#{$abbrev}b-#{$size},
+    .#{$abbrev}y-#{$size} {
+      #{$prop}-bottom: $length !important;
+    }
+
+    .#{$abbrev}l-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-left: $length !important;
+    }
+
+    .#{$abbrev}r-#{$size},
+    .#{$abbrev}x-#{$size} {
+      #{$prop}-right: $length !important;
+    }
+  }
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

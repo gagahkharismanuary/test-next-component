@@ -1,0 +1,47 @@
+{
+  "name": "test-next-component",
+  "version": "1.0.0",
+  "description": "test for publish to npm",
+  "main": "index.js",
+  "repository": "git@github.com:gagahkharismanuary/test-next-component.git",
+  "author": "Gagah Kharismanuary <gmanuary@gmail.com>",
+  "license": "MIT",
+
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-brands-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
+    "next": "^7.0.2",
+    "next-routes": "^1.4.2",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "sass-extract": "^2.1.0",
+    "sass-extract-js": "^0.4.0",
+    "sass-extract-loader": "^1.1.0",
+    "styled-components": "^4.1.3"
+  },
+
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-minify": "^0.5.0",
+    "babel-plugin-inline-dotenv": "^1.2.1",
+    "babel-plugin-module-resolver": "^3.1.3",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "5.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4"
+  }
+  
+}

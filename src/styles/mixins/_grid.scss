@@ -1,0 +1,4 @@
+@mixin make-col($index, $grid-columns) {
+  flex: 0 0 #{100% / ($grid-columns / $index)};
+  max-width: #{100% / ($grid-columns / $index)};
+};

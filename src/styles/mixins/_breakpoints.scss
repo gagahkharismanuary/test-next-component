@@ -1,0 +1,32 @@
+// Get min breakpoint width. Return null if 0(smallest breakpoint)
+//          breakpoint-min(xs, ( xs: 0, sm: 320, smd: 360, md: 768, lg: 960, xl: 1200 ))
+//          null
+//          breakpoint-min(lg, ( xs: 0, sm: 320, smd: 360, md: 768, lg: 960, xl: 1200 ))
+//          960
+@function breakpoint-min($name, $breakpoints: $breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min !=0, $min, null)
+};
+
+// Get breakpoint infix. Return empty string if 0(smallest breakpoint)
+//          breakpoint-infix(xs, ( xs: 0, sm: 320, smd: 360, md: 768, lg: 960, xl: 1200 ))
+//          ""
+//          breakpoint-infix(lg, ( xs: 0, sm: 320, smd: 360, md: 768, lg: 960, xl: 1200 ))
+//          lg
+@function breakpoint-infix($name, $breakpoints: $breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints)==null, "", $name);
+};
+
+// Create media breakpoint from given breakpoint and up
+@mixin media-breakpoint-up($name, $breakpoints: $breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media screen and (min-width: $min) {
+      @content;
+    }
+  }
+  @else {
+    @content;
+  }
+}

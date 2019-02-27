@@ -1,0 +1,13 @@
+.container {
+  width: 94%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+// Wrapper of col
+.row {
+  display: flex;
+  flex: wrap;
+}
+
+@include make-grid-columns();

@@ -1,0 +1,19 @@
+@import "partials/partials";
+@import "mixins/mixins";
+@import "utilities/utilities";
+@import "modules/modules";
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+body {
+}
+
+p {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: get-theme-color("primary");
+}

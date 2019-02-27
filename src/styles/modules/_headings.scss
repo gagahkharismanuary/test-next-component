@@ -1,0 +1,23 @@
+@each $prop, $sizes in $heading {
+  $index: index($heading, ($prop $sizes));
+
+  #{$prop} {
+    font-size: map-get($sizes, desktop);
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
+
+    @if $index <=3 {
+      font-weight: 700;
+    }
+    @else {
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: map-get($sizes, mobile);
+      font-weight: 600;
+    }
+  }
+}

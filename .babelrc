@@ -1,0 +1,36 @@
+{
+  "env": {
+    "development": {
+      "plugins": ["inline-dotenv"]
+    },
+    "production": {
+      "plugins": ["minify"]
+    }
+  },
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+          "ssr": true,
+          "displayName": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "components": "./src/components",
+          "config": "./config",
+          "ducks": "./redux/ducks",
+          "pages": "./pages",
+          "static": "./static",
+          "store": "store.js",
+          "styles": "./src/styles"
+        }
+      }
+    ]
+  ],
+  "presets": [
+    "next/babel",
+  ]
+}

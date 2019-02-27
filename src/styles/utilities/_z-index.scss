@@ -1,0 +1,9 @@
+@for $i from 1 through 10 {
+  .z-index-#{$i} {
+    z-index: #{$i} !important;
+  }
+}
+
+.z-index-auto {
+  z-index: auto !important;
+}

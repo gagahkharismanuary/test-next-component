@@ -1,0 +1,117 @@
+// ====== Color =======//
+
+// Brand Color
+$clr-brand-01: #00aeef;
+$clr-brand-02: #da336b;
+$clr-brand-03: #6ad248;
+
+// Text Color
+$clr-title-text: #3a3a3a;
+$clr-base-paragraph: #4a4a4a;
+$clr-sub-text: #989898;
+$clr-link-text: $clr-brand-01;
+$clr-secondary-label: $clr-brand-02;
+$clr-inverse-text: white;
+
+
+// Field Color
+$clr-field-01: #e7f5ff;
+$clr-field-02: #f2f3f4;
+$clr-field-03: #fafafa;
+$clr-field-04: #ffffff;
+
+// Border Color
+$clr-border-01: #d8d8d8;
+$clr-border-02: #e8e8e8;
+
+// Additional Color
+$clr-add-01: #e7f5ff; // focus
+$clr-add-02: #fff7c2; // warning
+$clr-add-03: #e5f5e7; // success
+$clr-add-04: #f80505; // danger
+
+// Social Media Color
+$clr-facebook: #3b5999;
+$clr-linked-in: #0077b5;
+$clr-twitter: #55acee;
+$clr-whatsapp: #25d366;
+$clr-line: #00c300;
+$clr-yahoo: #410093;
+$clr-google-plus: #dd4b39;
+$clr-dribbble: #ea4c89;
+$clr-youtube: #ff0000;
+
+$theme-colors: (
+  "primary": $clr-brand-01,
+  "secondary": $clr-brand-02,
+  "tersier": $clr-brand-03,
+  "info": $clr-add-01,
+  "warning": $clr-add-02,
+  "success": $clr-add-03,
+  "danger": $clr-add-04
+);
+
+$text-colors: (
+  "base": $clr-base-paragraph,
+  "primary": $clr-link-text,
+  "secondary": $clr-secondary-label,
+  "inverse": $clr-inverse-text,
+  "title": $clr-title-text,
+  "sub-text": $clr-sub-text,
+);
+// ====== End of Color =======//
+
+
+// Spacing
+$spacer: 5px !default;
+$spacers: (
+  0: 0,
+  1: $spacer,
+  2: ($spacer * 2),
+  3: ($spacer * 3),
+  4: ($spacer * 4),
+  5: ($spacer * 6),
+  6: ($spacer * 8)
+);
+
+// Headings
+$heading: (
+  h1: (
+    desktop: 36px,
+    mobile: 30px
+  ),
+  h2: (
+    desktop: 30px,
+    mobile: 20px
+  ),
+  h3: (
+    desktop: 24px,
+    mobile: 18px
+  ),
+  h4: (
+    desktop: 20px,
+    mobile: 16px
+  ),
+  h5: (
+    desktop: 18px,
+    mobile: 14px
+  ),
+  h6: (
+    desktop: 16px,
+    mobile: 12px
+  )
+);
+
+// Breakpoints: xtrasmall, small, smallmedium, medium, large, xtralarge
+$breakpoints: (
+  xs: 0px,
+  sm: 320px,
+  smd: 360px,
+  md: 768px,
+  lg: 960px,
+  xl: 1200px,
+) !default;
+
+// Grid columns
+$grid-columns: 12 !default;
+$grid-gutter-width: 3% !default;
